@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#000000">
+
+    <!-- Nội dung chính ở trên -->
+    <LinearLayout
+        android:id="@+id/content"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_above="@id/bottom_navigation"
+        android:layout_alignParentTop="true">
+
+        <!-- Tiêu đề Khám Phá -->
+        <TextView
+            android:id="@+id/title_kham_pha"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Khám phá"
+            android:textColor="#FFFFFF"
+            android:textSize="20sp"
+            android:layout_margin="16dp" />
+
+        <!-- RecyclerView cho Khám Phá -->
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/recycler_kham_pha"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="16dp"
+            android:clipToPadding="false"
+            app:layoutManager="androidx.recyclerview.widget.GridLayoutManager"
+            app:spanCount="2" />
+
+        <!-- Tiêu đề Nghe Gần Đây -->
+        <TextView
+            android:id="@+id/title_nghe_gan_day"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Nghe gần đây"
+            android:textColor="#FFFFFF"
+            android:textSize="20sp"
+            android:layout_margin="16dp" />
+
+        <!-- RecyclerView cho Nghe Gần Đây -->
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/recycler_nghe_gan_day"
+            android:layout_width="match_parent"
+            android:layout_height="130dp"
+            android:clipToPadding="false"
+            app:layoutManager="androidx.recyclerview.widget.GridLayoutManager"
+            app:spanCount="4" />
+
+        <!-- Tiêu đề Chủ Đề & Thể Loại -->
+        <TextView
+            android:id="@+id/title_chu_de_the_loai"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Chủ đề và thể loại"
+            android:textColor="#FFFFFF"
+            android:textSize="20sp"
+            android:layout_margin="16dp" />
+
+        <!-- RecyclerView cho Chủ Đề & Thể Loại -->
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/recycler_chu_de_the_loai"
+            android:layout_width="match_parent"
+            android:layout_height="170dp"
+            android:clipToPadding="false"
+            app:spanCount="4" />
+
+    </LinearLayout>
+
+    <!-- Thanh điều hướng phía dưới -->
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:id="@+id/bottom_navigation"
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:layout_alignParentBottom="true"
+        app:menu="@menu/navigation_menu"
+        android:background="#1a1a1a"
+        app:itemIconTint="@color/white"
+        app:itemTextColor="@color/white"/>
+
+</RelativeLayout>

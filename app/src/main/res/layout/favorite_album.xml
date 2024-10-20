@@ -1,0 +1,37 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <!-- TextView tiêu đề -->
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="Thư viện của tôi"
+        android:textSize="30sp"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="16dp"/>
+
+    <!-- RecyclerView để hiển thị danh sách album -->
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerViewThuVien"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_above="@id/bottom_navigation"
+        android:layout_below="@id/textView"
+        android:padding="16dp"
+        android:layout_marginTop="16dp"/>
+
+    <!-- Thanh điều hướng dưới -->
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:id="@+id/bottom_navigation"
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:layout_alignParentBottom="true"
+        app:menu="@menu/navigation_menu"
+        android:background="#1a1a1a"
+        app:itemIconTint="@color/white"
+        app:itemTextColor="@color/white"/>
+</RelativeLayout>
