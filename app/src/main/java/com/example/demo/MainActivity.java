@@ -47,7 +47,7 @@ public class MainActivity extends AppCompatActivity {
 
         // Tạo danh sách album
         albumNgheGanDay = new ArrayList<>();
-        albumNgheGanDay.add(new Album("Mình anh nơi này - NIT", R.drawable.minhanh));
+        albumNgheGanDay.add(new Album("Mình anh nơi        này - NIT", R.drawable.minhanh));
         albumNgheGanDay.add(new Album("Bạn đời - KARIK", R.drawable.bandoi));
         albumNgheGanDay.add(new Album("Lạ lùng - Vũ", R.drawable.lalung));
         albumNgheGanDay.add(new Album("Ngày đẹp trời để nói chia tay - Lou Hoàng", R.drawable.ngaydeptroidenoichiatay));

@@ -25,6 +25,7 @@ android {
             )
         }
     }
+
     compileOptions {
         sourceCompatibility = JavaVersion.VERSION_1_8
         targetCompatibility = JavaVersion.VERSION_1_8
@@ -32,7 +33,7 @@ android {
 }
 
 dependencies {
-
+    implementation("com.google.code.gson:gson:2.8.8")
     implementation(libs.appcompat)
     implementation(libs.material)
     implementation(libs.activity)
@@ -41,7 +42,6 @@ dependencies {
     androidTestImplementation(libs.ext.junit)
     androidTestImplementation(libs.espresso.core)
 
-    implementation ("androidx.recyclerview:recyclerview:1.2.1")
-    implementation ("com.google.android.material:material:1.9.0")
-
+    implementation("androidx.recyclerview:recyclerview:1.2.1")
+    implementation("com.google.android.material:material:1.9.0")
 }

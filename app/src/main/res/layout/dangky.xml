@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ImageView
+        android:id="@+id/imgdk"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/dangnhap" />
+
+    <EditText
+        android:id="@+id/edt2dk"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:drawableStart="@drawable/okhoa"
+        android:ems="10"
+        android:hint="Mật khẩu"
+        android:inputType="text"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.492"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/edt1dk" />
+
+    <EditText
+        android:id="@+id/edt3dk"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:drawableStart="@drawable/okhoa"
+        android:ems="10"
+        android:hint="Nhập lại mật khẩu"
+        android:inputType="text"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.492"
+        app:layout_constraintStart_toStartOf="@+id/imgdk"
+        app:layout_constraintTop_toBottomOf="@+id/edt2dk" />
+
+    <Button
+        android:id="@+id/btndk"
+        android:layout_width="209dp"
+        android:layout_height="51dp"
+        android:layout_marginTop="36dp"
+        android:backgroundTint="#565555"
+        android:text="Tạo tài khoản"
+        android:textColorLink="#673AB7"
+        app:layout_constraintEnd_toEndOf="@+id/imgdk"
+        app:layout_constraintHorizontal_bias="0.504"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/edt3dk" />
+
+    <TextView
+        android:id="@+id/txt2dk"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:text="Đã có tài khoản ?"
+        android:textSize="15sp"
+        app:layout_constraintEnd_toEndOf="@+id/imgdk"
+        app:layout_constraintHorizontal_bias="0.718"
+        app:layout_constraintStart_toStartOf="@+id/imgdk"
+        app:layout_constraintTop_toBottomOf="@+id/btndk" />
+
+    <TextView
+        android:id="@+id/txt1dkk"
+        android:layout_width="211dp"
+        android:layout_height="34dp"
+        android:layout_marginTop="200dp"
+        android:gravity="center"
+        android:text="TẠO TÀI KHOẢN"
+        android:textSize="25sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="@+id/imgdk"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/imgdk" />
+
+    <EditText
+        android:id="@+id/edt1dk"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:drawableStart="@drawable/nguoi"
+        android:ems="10"
+        android:hint="Tên đăng nhập"
+        android:inputType="text"
+        app:layout_constraintEnd_toEndOf="@+id/imgdk"
+        app:layout_constraintHorizontal_bias="0.492"
+        app:layout_constraintStart_toStartOf="@+id/imgdk"
+        app:layout_constraintTop_toBottomOf="@+id/txt1dkk" />
+</androidx.constraintlayout.widget.ConstraintLayout>
