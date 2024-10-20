@@ -14,7 +14,8 @@ import com.google.android.material.bottomnavigation.BottomNavigationView;
 
 import java.util.ArrayList;
 import java.util.List;
-//loc ngu vl
+
+//loc oc cho
 
 public class MainActivity extends AppCompatActivity {
     private RecyclerView recyclerKhamPha, recyclerNgheGanDay, recyclerChuDe;
